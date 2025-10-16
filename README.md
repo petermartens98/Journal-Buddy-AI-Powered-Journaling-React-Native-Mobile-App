@@ -1,8 +1,29 @@
 # 📘 AI Journal — React Native + Supabase App
 
-A simple journaling app built with **React Native (Expo)** and **Supabase**.  
-Users can **sign up, log in, and create journal entries**, which are securely stored and retrieved from Supabase.  
-The project also supports **chat history storage** for AI conversations or journaling insights.
+- Journaling app built with **React Native (Expo)** and **Supabase**.  
+- Users can **sign up, log in, and create journal entries**, which are securely stored and retrieved from Supabase.  
+- User can also utilize AI Chat (deepseek-chat) to futher reflect and chat about their experience.
+
+---
+## Screenshots
+### Login / Account Creation Screens
+<img width="409" height="914" alt="image" src="https://github.com/user-attachments/assets/6aeba6e5-1950-47dd-8008-d83f9645feed" />
+<img width="410" height="911" alt="image" src="https://github.com/user-attachments/assets/1759a6e4-a387-4600-b235-83bc4d49e3b1" />
+
+### Home Screen
+<img width="411" height="913" alt="image" src="https://github.com/user-attachments/assets/4417bfdb-8888-40c2-87b3-0beda13c2dc1" />
+
+### Entries (History) Screen
+<img width="410" height="913" alt="image" src="https://github.com/user-attachments/assets/e19d694d-304f-4a72-a1b1-e0061ee44878" />
+
+### Add New Entry Screen
+<img width="413" height="913" alt="image" src="https://github.com/user-attachments/assets/c29b6d3b-7b77-4d0f-a199-7dd0f059f7a9" />
+
+### AI Chat Screen
+<img width="410" height="905" alt="image" src="https://github.com/user-attachments/assets/d1a7b8ca-e0b5-47b3-b443-c1001d24375c" />
+
+### Profile Screen
+<img width="413" height="912" alt="image" src="https://github.com/user-attachments/assets/52cab761-d220-495f-bce7-7596846e009f" />
 
 ---
 
@@ -103,13 +124,14 @@ CREATE POLICY "Users can update their own chat history"
 CREATE POLICY "Users can delete their own chat history"
   ON chat_history FOR DELETE USING (auth.uid() = user_id);
   ```
+--- 
 
 ## ⚛️ React Native Setup Guide
 
 ## 🌀 Clone the Repository
 ```bash
-git clone <YOUR_REPO_LINK>
-cd AiJournalApp
+git clone https://github.com/petermartens98/Journal-Buddy-AI-Powered-Journaling-React-Native-App
+cd Journal-Buddy-AI-Powered-Journaling-React-Native-App
 ````
 
 ## 🚀 Initialize Expo Project
@@ -131,7 +153,7 @@ Add your keys:
 ```env
 SUPABASE_URL=your-supabase-url
 SUPABASE_KEY=your-supabase-anon-key
-DE
+DEEPSEEK_API_KEY=your-deepseek-api-key
 ```
 
 ## 📦 Install Dependencies
@@ -148,8 +170,3 @@ yarn install
 npx expo start
 ```
 
-Your React Native + Expo app is ready to launch! 🎉
-"""
-
-```
-```

@@ -1,4 +1,4 @@
-# 📘 AI Journal — React Native + Supabase App
+# 📘 AI Journal — React Native + Supabase Mobile App
 
 - Journaling app built with **React Native (Expo)** and **Supabase**.  
 - Users can **sign up, log in, and create journal entries**, which are securely stored and retrieved from Supabase.  

@@ -50,25 +50,6 @@ export default function LoginScreen({ navigation }) {
     }
   }, [session, navigation])
 
-  const handleSignUp = async () => {
-    if (!email || !password) {
-      Alert.alert('Error', 'Please enter both email and password')
-      return
-    }
-
-    setLoading(true)
-    const { error } = await supabase.auth.signUp({
-      email: email,
-      password: password,
-    })
-
-    if (error) {
-      Alert.alert('Sign Up Error', error.message)
-    } else {
-      Alert.alert('Success', 'Check your email for verification link!')
-    }
-    setLoading(false)
-  }
 
   const handleSignIn = async () => {
     if (!email || !password) {
@@ -86,18 +67,6 @@ export default function LoginScreen({ navigation }) {
       Alert.alert('Sign In Error', error.message)
     } else {
       // Navigation will happen automatically due to the session change
-    }
-    setLoading(false)
-  }
-
-  const handleGoogleSignIn = async () => {
-    setLoading(true)
-    const { error } = await supabase.auth.signInWithOAuth({
-      provider: 'google',
-    })
-
-    if (error) {
-      Alert.alert('Google Sign In Error', error.message)
     }
     setLoading(false)
   }

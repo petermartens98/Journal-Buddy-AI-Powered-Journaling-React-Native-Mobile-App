@@ -130,8 +130,8 @@ CREATE POLICY "Users can delete their own chat history"
 
 ## 🌀 Clone the Repository
 ```bash
-git clone https://github.com/petermartens98/Journal-Buddy-AI-Powered-Journaling-React-Native-App
-cd Journal-Buddy-AI-Powered-Journaling-React-Native-App
+git clone https://github.com/petermartens98/Journal-Buddy-AI-Powered-Journaling-React-Native-Mobile-App
+cd Journal-Buddy-AI-Powered-Journaling-React-Native-Mobile-App
 ````
 
 ## 🚀 Initialize Expo Project

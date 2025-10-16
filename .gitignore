@@ -39,3 +39,8 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+# Added after initiation
+.env
+.vscode
+package-lock.json
